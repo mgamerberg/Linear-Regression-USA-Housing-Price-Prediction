@@ -34,22 +34,27 @@ str(USAHousing)
 ggplot(USAHousing, aes(x=Avg..Area.Income , y=Price)) + geom_point()
 cor(USAHousing$Avg..Area.Income , USAHousing$Price)
 lm(Price ~ Avg..Area.Income, data = USAHousing)
+plot(lm(Price ~ Avg..Area.Income, data = USAHousing))
 
 ggplot(USAHousing, aes(x=Avg..Area.House.Age , y=Price)) + geom_point()
 cor(USAHousing$Avg..Area.House.Age , USAHousing$Price)
 lm(Price ~ Avg..Area.House.Age, data = USAHousing)
+plot(lm(Price ~ Avg..Area.House.Age, data = USAHousing))
 
 ggplot(USAHousing, aes(x=Avg..Area.Number.of.Rooms , y=Price)) + geom_point()
 cor(USAHousing$Avg..Area.Number.of.Rooms , USAHousing$Price)
 lm(Price ~ Avg..Area.Number.of.Rooms, data = USAHousing)
+plot(lm(Price ~ Avg..Area.Number.of.Rooms, data = USAHousing))
 
 ggplot(USAHousing, aes(x=Avg..Area.Number.of.Bedrooms , y=Price)) + geom_point()
 cor(USAHousing$Avg..Area.Number.of.Bedrooms , USAHousing$Price)
 lm(Price ~ Avg..Area.Number.of.Bedrooms, data = USAHousing)
+plot(lm(Price ~ Avg..Area.Number.of.Bedrooms, data = USAHousing))
 
 ggplot(USAHousing, aes(x=Area.Population , y=Price)) + geom_point()
 cor(USAHousing$Area.Population , USAHousing$Price)
 lm(Price ~ Area.Population, data = USAHousing)
+plot(lm(Price ~ Area.Population, data = USAHousing))
 
 #add a correlation line to the graph
 #compare all of the correlation values to see which one is the strongest indicator of the
