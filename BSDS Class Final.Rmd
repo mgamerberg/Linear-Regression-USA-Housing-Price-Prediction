@@ -23,6 +23,7 @@ library(tidyverse)
 USAHousing <- read.csv("USA_Housing.csv")
 USAHousing
 head(USAHousing)
+summary(USAHousing)
 str(USAHousing)
 #Average Area Income, Average Area House Age, Average Area Number of Rooms, 
 #Average Area Number of Bedrooms, Area Population, Price, Address
